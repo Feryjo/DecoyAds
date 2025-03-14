@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گیم‌زون | اخبار و بررسی بازی‌های رایانه‌ای</title>
+    
+</head>
+  <style>
+    body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header .social img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-grid, .reviews-grid, .articles-grid, .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item, .review-item, .article-item, .video-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.news-item img, .review-item img, .article-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    </style>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="لوگو گیم‌زون">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#news">اخبار</a></li>
+                    <li><a href="#reviews">نقد و بررسی</a></li>
+                    <li><a href="#articles">مقالات</a></li>
+                    <li><a href="#videos">ویدیوها</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><img src="instagram.png" alt="اینستاگرام"></a>
+                <a href="#"><img src="telegram.png" alt="تلگرام"></a>
+                <a href="#"><img src="youtube.png" alt="یوتیوب"></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="news" class="news">
+        <div class="container">
+            <h2>آخرین اخبار</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="news1.jpg" alt="خبر 1">
+                    <h3>عنوان خبر 1</h3>
+                    <p>خلاصه خبر 1...</p>
+                    <a href="#">ادامه مطلب</a>
+                </div>
+                <div class="news-item">
+                    <img src="news2.jpg" alt="خبر 2">
+                    <h3>عنوان خبر 2</h3>
+                    <p>خلاصه خبر 2...</p>
+                    <a href="#">ادامه مطلب</a>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>نقد و بررسی‌ها</h2>
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <img src="review1.jpg" alt="نقد 1">
+                    <h3>عنوان نقد 1</h3>
+                    <p>خلاصه نقد 1...</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                <div class="review-item">
+                    <img src="review2.jpg" alt="نقد 2">
+                    <h3>عنوان نقد 2</h3>
+                    <p>خلاصه نقد 2...</p>
+                    <div class="rating">★★★☆☆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>مقالات</h2>
+            <div class="articles-grid">
+                <div class="article-item">
+                    <img src="article1.jpg" alt="مقاله 1">
+                    <h3>عنوان مقاله 1</h3>
+                    <p>خلاصه مقاله 1...</p>
+                    <a href="#">ادامه مطلب</a>
+                </div>
+                <div class="article-item">
+                    <img src="article2.jpg" alt="مقاله 2">
+                    <h3>عنوان مقاله 2</h3>
+                    <p>خلاصه مقاله 2...</p>
+                    <a href="#">ادامه مطلب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>ویدیوها</h2>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    <h3>عنوان ویدیو 1</h3>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    <h3>عنوان ویدیو 2</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 1402 گیم‌زون. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
