@@ -1,6 +1,6 @@
 <?php
 // نام فایل ذخیره‌سازی داده‌ها
-$filename = 'videos.txt';
+$filename = 'vid.txt';
 
 // خواندن داده‌ها از فایل
 function loadVideos($filename) {
